@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "a399138-witnesses: witness configurations and lower bounds for the no-three-in-line problem in the n x n x n grid (OEIS A399138)"
+authors:
+  - family-names: Kudriashov
+    given-names: Aleksei
+version: "1.0"
+date-released: 2026-09-03
+license: CC-BY-4.0
+repository-code: https://github.com/iwasborninbali/a399138-witnesses
