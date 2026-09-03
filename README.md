@@ -1,5 +1,7 @@
 # a399138-witnesses — no three collinear points in the n × n × n grid (OEIS A399138)
 
+**Archived release v1.0:** DOI [10.5281/zenodo.22271376](https://doi.org/10.5281/zenodo.22271376) (concept DOI 10.5281/zenodo.22271375).
+
 Witness configurations, an independent verifier, and the symmetry-stratum search behind the lower bounds
 
 | n | best known | this repository | symmetry of the witness | status of the value |
