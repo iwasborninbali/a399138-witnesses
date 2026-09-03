@@ -6,10 +6,10 @@ Witness configurations, an independent verifier, and the symmetry-stratum search
 
 | n | best known | this repository | symmetry of the witness | status of the value |
 |---|---|---|---|---|
-| 7 | 73 | four inequivalent 73-point configurations (14 classes known in total) | trivial / order 2 / order 3 | lower bound (a(7) ≥ 73) |
+| 7 | 73 | four inequivalent 73-point configurations (14 classes known in total) | trivial (all four; the stratum-found 73-point classes with symmetry of order 2, 3 and 6 are in the `saturation` repository) | lower bound (a(7) ≥ 73) |
 | 8 | **94** (previously 93) | two inequivalent 94-point configurations | subgroups of order 4 | lower bound |
 | 9 | **116** | two inequivalent 116-point configurations | order 4; order 12 (optimal within its stratum) | lower bound |
-| 10 | **138** | one 138-point configuration | order 6 | lower bound |
+| 10 | **138** | one 138-point configuration | order 12 (found in the order-6 stratum c16; its full stabiliser has order 12, and 138 is also optimal within the order-12 stratum c26) | lower bound |
 | 11 | **164** | one 164-point configuration | order 12 | lower bound |
 
 a(1..6) = 1, 8, 16, 28, 40, 64 are the certified exact values (Kudriashov 2026, DOI 10.5281/zenodo.22019279); this repository adds the
@@ -36,7 +36,9 @@ The check is independent of the search code.
 - `verify_witness_lines.py` — the verifier.
 - `strata/cube_strata.py` — the stratum sweep: for each conjugacy class of subgroups H ≤ O_h, a CP-SAT model over H-orbits of cells with
   the constraint "at most two chosen cells on every grid line"; `strata/n<n>_results.json` — best value, bound and status per stratum.
-- `classes/classes_n<n>.txt` — equivalence classes of the witnesses under the 48 symmetries of the cube (canonical forms).
+- `classes/classes_n<n>.txt` — equivalence classes of the witnesses under the 48 symmetries of the cube (canonical forms). Stabiliser
+  orders of the witnesses in `witnesses/` (checked 3 Sep 2026 with an independent canonical-form code): n = 7 — 1, 1, 1, 1; n = 8 — 4, 4;
+  n = 9 — 4, 12; n = 10 — 12; n = 11 — 12.
 - `oeis/a399138.txt` — the a-file submitted to OEIS (witnesses for n = 1…11).
 
 ## Provenance
